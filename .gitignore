@@ -1,0 +1,13 @@
+
+# Mac OS X
+
+.DS_Store
+
+# NodeJS NPM
+
+node_modules
+npm-debug.log
+
+# Tests
+
+coverage/

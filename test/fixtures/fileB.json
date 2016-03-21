@@ -1,0 +1,10 @@
+{
+    "JSON.string.1": "string1",
+    "JSON.string.3": "string3",
+
+    "JSON.float.1": "int1",
+    "JSON.int.2": "float2",
+    "JSON.int.3": "int3",
+
+    "JSON.new": "new"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "validate-json-locales",
+  "version": "0.1.0",
+  "description": "Validate locales files in JSON format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seventy-three/validate-json-locales.git"
+  },
+  "keywords": [
+    "validate",
+    "locales",
+    "JSON"
+  ],
+  "author": "Florian Sey <florian.sey@gmail.com> (http://florian-sey.fr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seventy-three/validate-json-locales/issues"
+  },
+  "homepage": "https://github.com/seventy-three/validate-json-locales#readme",
+  "dependencies": {
+    "lodash": "^4.6.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
