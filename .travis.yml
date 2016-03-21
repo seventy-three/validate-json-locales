@@ -3,8 +3,11 @@ node_js:
   - "4"
   - "5"
 before_install:
-  - npm install -g npm jshint mocha istanbul
+  - npm install -g npm 
 before_script:
+  - npm install -g jshint 
+  - npm install -g mocha 
+  - npm install -g istanbul
   - npm install
 script: 
   - npm run jshint
