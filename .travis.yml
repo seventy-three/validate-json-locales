@@ -10,6 +10,6 @@ before_script:
   - npm install -g istanbul
   - npm install
 script: 
-  - npm run jshint
+  - npm run lint
   - npm test
   - npm run coverage
