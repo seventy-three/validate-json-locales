@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "4"
+  - "5"
+before_install:
+  - npm install -g npm jshint mocha istanbul
+before_script:
+  - npm install
+script: 
+  - npm run jshint
+  - npm test
+  - npm run coverage
