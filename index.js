@@ -8,6 +8,4 @@
 
 'use strict';
 
-var utils = require('./lib/utils');
-
-exports = utils;
+module.exports = require('./lib/utils');
