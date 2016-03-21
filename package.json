@@ -26,6 +26,7 @@
     "lodash": "^4.6.1"
   },
   "devDependencies": {
+    "coveralls": "^2.11.8",
     "mocha": "^2.4.5"
   }
 }
