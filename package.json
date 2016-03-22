@@ -1,6 +1,6 @@
 {
   "name": "validate-json-locales",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Validate locales files in JSON format.",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/seventy-three/validate-json-locales#readme",
   "dependencies": {
-    "lodash": "^4.6.1"
+    "lodash": "^4.6.1",
+    "strip-bom": "^2.0.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.8",

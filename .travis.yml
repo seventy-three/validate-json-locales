@@ -1,19 +1,26 @@
 language: node_js
 node_js:
-  - "4"
-  - "5"
+- '4'
+- '5'
 before_install:
-  - npm install -g npm 
+- npm install -g npm
 before_script:
-  - npm install -g jshint 
-  - npm install -g mocha 
-  - npm install -g istanbul
-  - npm install -g codeclimate-test-reporter
-  - npm install
-script: 
-  - npm run lint
-  - npm test
-  - npm run coverage
+- npm install -g jshint
+- npm install -g mocha
+- npm install -g istanbul
+- npm install -g codeclimate-test-reporter
+- npm install
+script:
+- npm run lint
+- npm test
+- npm run coverage
 after_success:
-  - npm run coveralls
-  - codeclimate-test-reporter < coverage/lcov.info
+- npm run coveralls
+- codeclimate-test-reporter < coverage/lcov.info
+deploy:
+  provider: npm
+  on:
+    tags: true
+  email: "florian.sey@gmail.com"
+  api_key:
+    secure: JCVhjEr68WXcKAG7xBHAxT8uzpoHFeYVpwchfVLnDPqFQIcQp+Zlq6hKyVq4cBpoH7zjTtC4UWEObiSES50fnXOWVq3+dnvp/JjfQuGQfEt93YtYy8eatQ2SKVq5xxWn65t/l/ocEZ1/3RlFymVv5GgarApthtseMWvcYrgFdP/3YLEge27Qzhlcuas4XzSfT3ASZ/v3QFLes0Qnqzijbimmy20PJJ8EiQBuI6LoKzVg0NO8YPLRs3qrMEWjtugvqdDdZ2qD3UcQIcwZTCfRMwChmd2JB36DsqrsgFQB5XP+44rQ5p1tLaXBTEmpeNEXjdbr/Qd+u/wwckIxvyPHWBi3iFXcLWLYZuDOWWckAiTLSTNhPS1Hqh78ugzMS5UkmkF+rHg8FXnVsk0c467B2wrowq6vX3csI4k+PivTuEiPTA3pLu5qyW/BXKID3YSQ8Jpenkzp0wU10j8XhiUcUffOdws6rF0Y/RtkLSqSxD37hZAjHHfDjJ9hnVOoMTTrmnHjUWo5jl6H/t0vuBYlZ1gLlImdAcDnXG8+FkdLCMheXcXblkl2fhoB9DfAXZC1Bs8vNpFSV5jNwzo8wkEVQCb3jCRltvlllca5b5XjjaDGKhrH+jnWpaaik9o/M2KNQ1YsKk22LPP39k5D492IelKynPXA/vw9Z8PqOHQK7JE=
