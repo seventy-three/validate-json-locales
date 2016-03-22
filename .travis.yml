@@ -12,4 +12,5 @@ before_script:
 script: 
   - npm run lint
   - npm test
-  - npm run coverage
+after_success:
+  - npm run coveralls
