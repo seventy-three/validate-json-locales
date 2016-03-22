@@ -25,3 +25,4 @@ deploy:
   on:
     tags: true
     repo: seventy-three/validate-json-locales
+    node: '5'
