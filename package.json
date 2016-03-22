@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha",
     "coverage": "istanbul cover _mocha",
-    "lint": "jshint lib test index.js"
+    "lint": "jshint lib test index.js",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
